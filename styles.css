@@ -99,13 +99,24 @@ footer {
     position: sticky;
     bottom: 0;
     z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer p {
     margin: 0;
     padding-bottom: 0.5em;
-    padding-left: 0.5em;
     padding-top: 0.5em;
+    padding-left: 1em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin-right: 1em;
 }
 
 #banner {
