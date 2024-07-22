@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DDD;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1.1em;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    flex: 1;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 0.5em 0;
+    max-height: 5em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #000;
+}
+
+.logo {
+    margin: 0.5em;
+    height: 2em;
+    width: 2em;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background: #333;
+    top: 100%;
+    left: 0;
+    width: max-content;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul li a {
+    padding: 1em;
+}
+
+main {
+    padding: 1em 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: left;
+    padding: 0;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+}
+
+#banner {
+    width: 75vw;
+    background: url('images/banner1.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin: 1em auto;
+    object-fit: cover;
+    height: 20vh;
+    filter: brightness(50%) blur(0.1px) grayscale(5%) drop-shadow(0 0 0.5rem black);
+    border: solid 0.1em #333;
+    cursor: pointer;
+    transition: filter 0.5s, scale 0.5s;
+}
+
+#banner:hover {
+    filter: brightness(100%) blur(0px) grayscale(0%) drop-shadow(0 0 0.5rem black);
+    scale: 1.1;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section {
+    border-bottom: 1px solid #ccc;
+}
+
+#contact_button {
+    background: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    margin: 1em 0;
+    font-size: 2.5em;
+    border-radius: 0.5em;
+    border: solid 0.1em #141414;
+    transition: background 0.5s, scale 0.5s;
+}
+
+#contact_button:hover {
+    background: #000;
+    scale: 1.3;
+}
+
+#images-wrapper {
+    line-height: 0;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 5;
+    column-gap: 0px;
+    overflow: visible;
+}
+
+#images-wrapper img {
+    width: 100% !important;
+    height: auto !important;
+    border: solid 0.1em #333;
+    filter: brightness(75%) blur(0.1px) grayscale(5%) drop-shadow(0 0 0.5rem black);
+    transition: filter 0.5s, transform 0.5s;
+    z-index: 1;
+    position: relative;
+}
+
+#images-wrapper {
+    display: inline-block;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+}
+
+#images-wrapper img:hover {
+    filter: none;
+    transform: scale(1.2);
+    z-index: 5;
+    position: relative;
+}
+
+.bold {
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 3em;
+}
+
+.two-col--two {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 3em;
+    max-width: 98%;
+}
+
+.img_28 {
+    width: 100%;
+    margin: 0.5em;
+    border: solid 0.25em #333;
+    border-radius: 0.3em;
+    z-index: 5;
+    position: relative;
+}
+
+.leftSideHeader {
+    text-decoration: none;
+    color: #FFF;
+    display: flex;
+}
+
+header h1 {
+    margin: 0.4em;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+.col2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+}
+
+.eagle_img {
+    width: 100%;
+    margin: 0.5em;
+    border: solid 0.25em #333;
+    border-radius: 0.3em;
+    z-index: 5;
+    position: relative;
+}
+
+.eagle li {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.two-col--three {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 3em;
+    width: 90%;
+}
