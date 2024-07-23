@@ -189,8 +189,8 @@ section {
 
 #images-wrapper {
     display: inline-block;
-    margin-right: 1em;
-    margin-left: 1em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
     padding-left: 1em;
     padding-right: 1em;
     position: relative;
@@ -198,7 +198,7 @@ section {
 
 #images-wrapper img:hover {
     filter: none;
-    transform: scale(1.2);
+    transform: scale(1.3);
     z-index: 5;
     position: relative;
 }
@@ -339,5 +339,12 @@ header h1 {
 
     .ignore {
         text-align: left;
+    }
+
+    #images-wrapper img:hover {
+        filter: none;
+        transform: scale(2);
+        z-index: 5;
+        position: relative;
     }
 }
